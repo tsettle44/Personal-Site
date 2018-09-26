@@ -90,3 +90,11 @@ function scrollToCon(){
         behavior: 'smooth'
     })
 }
+
+function scrollToTop(){
+    var body = document.getElementById("backdrop")
+
+    body.scrollIntoView({
+        behavior: 'smooth'
+    })
+}
