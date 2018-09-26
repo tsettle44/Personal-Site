@@ -13,6 +13,10 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:100,300" rel="stylesheet">
+    
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
@@ -39,11 +43,9 @@
             <img id="backImage" src="Pics/Background.png"/>
         </div>
         <div id="about">
-            kjbkbkjb
-        </div>
-
-        <div id="about">
-            kjbkbkjb
+                <div id="sig" data-aos="fade-up-right">
+                    <img src="pics/signature.png">
+                </div>
         </div>
         <div id="experience"></div>
         <div id="contact"></div>
@@ -51,6 +53,9 @@
 </body>
 
 <script src="main.js"></script>
+<script>
+        AOS.init();
+</script>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
