@@ -6,6 +6,10 @@ function resize(){
         backdrop.style.height = heights + "px";
         var about = document.getElementById("about")
         about.style.height = heights + "px";
+        var experience = document.getElementById("experience")
+        experience.style.height = heights + "px";
+        var contact = document.getElementById("contact")
+        contact.style.height = heights + "px";
 
     }
 
@@ -19,7 +23,7 @@ window.onresize = function() {
 
 $(document).ready(function(){
     $(window).scroll(function(){
-        $("#desImage").css("opacity", 1 - $(window).scrollTop() / ($('#desImage').height() / 2));
+        $("#desImage").css("opacity", 1 - $(window).scrollTop() / ($('#desImage').height()/4));
     });
 });
 
@@ -34,3 +38,55 @@ $(document).ready(function(){
         $("#name").css("opacity", 1 - $(window).scrollTop() / ($('#name').height()));
     });
 });
+
+//Toggle Images from opacity
+function opacity(){
+    var desImage = document.getElementById("desImage")
+    var backImage = document.getElementById("backImage")
+    var name = document.getElementById("name")
+
+    if (desImage.style.opacity < 0){
+        desImage.style.display = "none"
+        backImage.style.display = "none"
+        name.style.display = "none"
+    } else {
+        desImage.style.display = "block"
+        backImage.style.display = "block"
+        name.style.display = "block"
+    }
+}
+
+window.onscroll = function() {opacity()};
+
+//Scroll to ID
+function scrollToAbout(){
+    var about = document.getElementById("about")
+
+    about.scrollIntoView({
+        behavior: 'smooth'
+    })
+}
+
+function scrollToExp(){
+    var exp = document.getElementById("experience")
+
+    exp.scrollIntoView({
+        behavior: 'smooth'
+    })
+}
+
+function scrollToAbout(){
+    var about = document.getElementById("about")
+
+    about.scrollIntoView({
+        behavior: 'smooth'
+    })
+}
+
+function scrollToCon(){
+    var Con = document.getElementById("contact")
+
+    Con.scrollIntoView({
+        behavior: 'smooth'
+    })
+}

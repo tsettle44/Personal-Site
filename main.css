@@ -35,7 +35,7 @@ body{
     font-weight: 100;
     color: #ffffff;
     font-size: 1.5em;
-    z-index: 99;
+    z-index: 101;
 }
 
 .navLink:hover {
@@ -58,7 +58,7 @@ body{
 #logo{
     height: 60px;
     width: 60px;
-    z-index: 99;
+    z-index: 101;
     position: fixed;
 }
 
@@ -92,8 +92,8 @@ body{
 #desLogo{
     text-align: center;
     position: relative;
-    bottom: 800px;
     opacity: .1;
+    z-index: 99;
 }
 
 #name{
@@ -102,7 +102,22 @@ body{
     font-size: 8em;
     text-align: center;
     position: relative;
-    bottom: 1300px;
-    color: #ffffff
+    top: -470px;
+    color: #ffffff;
+    z-index: 100;
 }
+
+#about{
+    background-color: #39363D
+}
+
+#experience{
+    background-color: aqua;
+}
+
+#contact {
+    background-color: #FF5400;
+}
+
+
 
