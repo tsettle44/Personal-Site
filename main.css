@@ -100,9 +100,10 @@ body{
 }
 
 #name{
+    font-family: 'Rubik Mono One', sans-serif;
     background: transparent;
-    font-weight: 300;
-    font-size: 8em;
+    font-weight: 900;
+    font-size: 6em;
     text-align: center;
     position: relative;
     top: -470px;
@@ -110,10 +111,45 @@ body{
     z-index: 100;
 }
 
+#aboutTitle {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 4em;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    left: 0px;
+    color: #39363D;
+}
+
 #about{
     color: #ffffff;
     background-color: #ffffff;
     z-index: 999;
+    height: 900px;
+}
+
+#about .row{
+    width: 400px;
+    position: relative;
+    float: right;
+    right: 35px;
+    top: 100px;
+}
+
+#about .row .col{
+    padding: 0px;
+}
+
+#about .row .col img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.gray:hover {
+    opacity: .8;
 }
 
 #sig img{
@@ -123,6 +159,15 @@ body{
     right: -75px;
 }
 
+#face {
+    position: relative;
+    bottom: 0px;
+}
+
+#face img{
+    height: 300px;
+}
+
 #experience{
     background-color: aqua;
 }
@@ -130,6 +175,8 @@ body{
 #contact {
     background-color: #FF5400;
 }
+
+
 
 
 
