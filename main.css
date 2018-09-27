@@ -128,13 +128,6 @@ body{
     height: 900px;
 }
 
-#about .row{
-    width: 400px;
-    position: relative;
-    float: right;
-    right: 35px;
-    top: 100px;
-}
 
 #about .row .col{
     padding: 0px;
@@ -148,7 +141,23 @@ body{
     opacity: 1;
 }
 
-.gray:hover {
+.float {
+    float: right;
+}
+
+.center{
+    text-align: center;
+}
+
+.floatL {
+    float: left;
+}
+
+#aboutSec {
+    margin-top: 50px; 
+}
+
+#about .row .col img:hover {
     opacity: .8;
 }
 
