@@ -1,26 +1,3 @@
-@media (min-width: 1920px) { 
-.container-fluid{
-    width: 1920px;
-}
-
-#backdrop{
-    width: 1920px;
-}
-
-#desImage{
-    width: 1920px;
-}
-
-#backImage{
-    width: 1920px;
-}
-
-#navbar{
-    width: 1920px !important;
-}
-
-}
-
 .container-fluid{
     padding: 0px;
 }
@@ -80,7 +57,7 @@ body{
     max-width: 100%;
     height: auto;
     position: fixed;
-    bottom: -854px;
+    bottom: -887px;
 }
 
 #backImage {
@@ -88,7 +65,7 @@ body{
     height: auto;
     max-height: 1850px;
     position: fixed;
-    bottom: 0px;
+    bottom: -26px;
     opacity: .31;
 }
 
@@ -128,53 +105,12 @@ body{
     height: 900px;
 }
 
-
-#about .row .col{
-    padding: 0px;
-}
-
-#about .row .col img{
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-    transition: 0.3s;
-    opacity: 1;
-}
-
-.float {
-    float: right;
-}
-
-.center{
+#aboutCon{
+    position: relative;
+    top: 85px;
     text-align: center;
-}
-
-.floatL {
-    float: left;
-}
-
-#aboutSec {
-    margin-top: 50px; 
-}
-
-#about .row .col img:hover {
-    opacity: .8;
-}
-
-#sig img{
-    height: 100px;
-    position: relative;
-    top: 250px;
-    right: -75px;
-}
-
-#face {
-    position: relative;
-    bottom: 0px;
-}
-
-#face img{
-    height: 300px;
+    color: #39363D;
+    padding: 20px;
 }
 
 #experience{
