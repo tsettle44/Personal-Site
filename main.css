@@ -110,6 +110,9 @@ body{
     top: 85px;
     text-align: center;
     color: #39363D;
+}
+
+#aboutCon .row .col-sm{
     padding: 20px;
 }
 
