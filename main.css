@@ -187,6 +187,10 @@ body{
     margin-top: 10px;
 }
 
+.no-bullets{
+    list-style: none; 
+}
+
 p{
     margin: 5px;
 }
