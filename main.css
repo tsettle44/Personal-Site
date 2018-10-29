@@ -188,11 +188,35 @@ body{
 }
 
 .no-bullets{
-    list-style: none; 
+    list-style: none;
 }
 
 p{
     margin: 5px;
+}
+
+.skill{
+    font-size: 18px;
+    padding-right: 10px;
+    text-align: left;
+}
+
+.fas{
+    font-size: 18px;
+    float: right;
+    -webkit-transition: padding-right 1s;
+    transition: padding-right 1s;
+}
+
+.far{
+    font-size: 18px;
+    float: right;
+    -webkit-transition: padding-right 1s;
+    transition: padding-right 1s;
+}
+
+.fas far:hover{
+    padding-right: 3px; 
 }
 
 #contact {
