@@ -5,10 +5,6 @@ function resize(){
         var backdrop = document.getElementById("backdrop")
         backdrop.style.height = heights + "px";
         
-        var experience = document.getElementById("experience")
-        experience.style.height = heights + "px";
-        var contact = document.getElementById("contact")
-        contact.style.height = heights + "px";
 
     }
 

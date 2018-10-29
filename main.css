@@ -102,14 +102,16 @@ body{
     color: #ffffff;
     background-color: #ffffff;
     z-index: 999;
-    height: 900px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; 
 }
 
 #aboutCon{
-    position: relative;
-    top: 85px;
+    margin-top: 60px; 
     text-align: center;
     color: #39363D;
+    height: 100%;
 }
 
 #aboutCon .row .col-sm{
@@ -155,13 +157,15 @@ body{
 }
 
 .title{
-    font-size: 40px;
+    margin-top: 20px;
+    font-size: 3em;
     font-weight: 900;
 }
 
 .infoTitle{
-    font-size: 25px;
+    font-size: 2em;
     font-weight: 600;
+    display: inline;
 }
 
 .subtitle{
@@ -172,6 +176,7 @@ body{
 .subInfo{
     font-size: 20px;
     margin-top: -10px;
+    display: inline;
 }
 
 .right{
