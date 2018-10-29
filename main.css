@@ -127,6 +127,59 @@ body{
 
 #experience{
     background-color: aqua;
+    background-image: url("Pics/BackgroundColor-Blue.png") 
+}
+
+#resume{
+    background-color: #ffffff;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    opacity: .8;
+}
+
+#ExpTitle {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 4em;
+    text-align: center;
+    padding-top: 10px; 
+    color: #39363D;
+}
+
+#ExpdesImage{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 78px;
+}
+
+.title{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.infoTitle{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.subtitle{
+    font-size: 25px;
+    font-style: italic;
+}
+
+.subInfo{
+    font-size: 20px;
+    margin-top: -10px;
+}
+
+.right{
+    float: right;
+}
+
+p{
+    margin: 5px;
 }
 
 #contact {
