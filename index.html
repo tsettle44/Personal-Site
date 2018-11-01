@@ -24,6 +24,9 @@
     <!--Smooth-Scroll-->
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
 
+    <!--typeit-->
+    <script src="https://cdn.jsdelivr.net/npm/typeit@5.10.7/dist/typeit.min.js"></script>
+
     <!--FontAwesomme-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 
@@ -47,9 +50,7 @@
             <div id="desLogo">
                 <img src="Pics/diamondWhite.png"/>
             </div>
-            <div id="name">
-                TOM.SETTLE.
-            </div>
+            <div id="name"></div>
             <img id="desImage" src="Pics/BackgroundColor.png"/>
             <img id="backImage" src="Pics/Background.png"/>
         </div>
@@ -306,10 +307,24 @@
 
 <script src="main.js"></script>
 <script>
+        //AOS
         AOS.init();
+        //Smooth-Scroll
         var scroll = new SmoothScroll('a[href*="#"]',{
             offset: 30
         });
+        //typeit
+        var instance = new TypeIt('#name', {
+                speed: 100,
+                autoStart: false,
+            })
+            .type('THOMAS')
+            .pause(500)
+            .delete(5)
+            .type('OM ')
+            .pause(500)
+            .type('SETTLE.');
+
 </script>
 
 <!-- Optional JavaScript -->

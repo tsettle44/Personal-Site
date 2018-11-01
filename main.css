@@ -86,6 +86,7 @@ body{
     top: -470px;
     color: #ffffff;
     z-index: 100;
+    padding-left: 150px;
 }
 
 #aboutTitle {
