@@ -21,6 +21,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <!--Smooth-Scroll-->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
     <!--FontAwesomme-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 
@@ -32,13 +35,13 @@
     <div class="container-fluid">
         <div id="navbar">   
             <a id="logoLink">
-                <a href="javascript:scrollToTop()">
+                <a data-scroll  href="#navbar">
                     <img id="logo" src="Pics/logoWhiteTrans.png"/>
                 </a>
             </a> 
-            <a id="contactLink" class="navLink" href="javascript:scrollToCon()">Contact</a>
-            <a id="experienceLink" class="navLink" href="javascript:scrollToExp()">Experience</a>
-            <a id="aboutLink" class="navLink" href="javascript:scrollToAbout()">About</a>
+            <a data-scroll id="contactLink" class="navLink" href="#contact">Contact</a>
+            <a data-scroll id="experienceLink" class="navLink" href="#experience">Experience</a>
+            <a data-scroll id="aboutLink" class="navLink" href="#about">About</a>
         </div>
         <div id="backdrop">
             <div id="desLogo">
@@ -304,6 +307,9 @@
 <script src="main.js"></script>
 <script>
         AOS.init();
+        var scroll = new SmoothScroll('a[href*="#"]',{
+            offset: 30
+        });
 </script>
 
 <!-- Optional JavaScript -->
