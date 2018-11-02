@@ -25,7 +25,7 @@ body{
     text-transform: uppercase;
     font-weight: 100;
     color: #ffffff;
-    font-size: 1.5em;
+    font-size: 100%;
     z-index: 102;
 }
 
@@ -63,7 +63,6 @@ body{
 #backImage {
     max-width: 100%;
     height: auto;
-    max-height: 1850px;
     position: fixed;
     bottom: -26px;
     opacity: .31;
@@ -80,13 +79,17 @@ body{
     font-family: 'Rubik Mono One', sans-serif;
     background: transparent;
     font-weight: 900;
-    font-size: 6em;
+    font-size: 440%;
     text-align: center;
     position: relative;
     top: -470px;
     color: #ffffff;
     z-index: 100;
-    padding-left: 150px;
+    padding-left: 120px;
+}
+
+#btnAgain{
+    z-index: 999;
 }
 
 #aboutTitle {
@@ -130,7 +133,7 @@ body{
 
 #experience{
     background-color: aqua;
-    background-image: url("Pics/BackgroundColor-Blue.png") 
+    background-image: url("Pics/BackgroundColor-Blue.png")
 }
 
 #resume{
@@ -150,32 +153,25 @@ body{
     color: #39363D;
 }
 
-#ExpdesImage{
-    max-width: 100%;
-    height: auto;
-    position: relative;
-    bottom: 78px;
-}
-
 .title{
     margin-top: 20px;
-    font-size: 3em;
+    font-size: 200%;
     font-weight: 900;
 }
 
 .infoTitle{
-    font-size: 2em;
+    font-size: 150%;
     font-weight: 600;
     display: inline;
 }
 
 .subtitle{
-    font-size: 25px;
+    font-size: 150%;
     font-style: italic;
 }
 
 .subInfo{
-    font-size: 20px;
+    font-size: 125%;
     margin-top: -10px;
     display: inline;
 }
@@ -222,6 +218,7 @@ p{
 
 #contact {
     background-color: #FF5400;
+    height: 900px;
 }
 
 

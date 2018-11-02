@@ -27,6 +27,9 @@
     <!--typeit-->
     <script src="https://cdn.jsdelivr.net/npm/typeit@5.10.7/dist/typeit.min.js"></script>
 
+    <!--Rellax-->
+    <script src="rellax.min.js"></script>
+
     <!--FontAwesomme-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 
@@ -47,12 +50,12 @@
             <a data-scroll id="aboutLink" class="navLink" href="#about">About</a>
         </div>
         <div id="backdrop">
-            <div id="desLogo">
+            <div class="rellax" data-rellax-speed="2" id="desLogo">
                 <img src="Pics/diamondWhite.png"/>
             </div>
             <div id="name"></div>
-            <img id="desImage" src="Pics/BackgroundColor.png"/>
-            <img id="backImage" src="Pics/Background.png"/>
+            <img class="rellax" data-rellax-speed="-4" id="desImage" src="Pics/BackgroundColor.png"/>
+            <img class="rellax" data-rellax-speed="-7" id="backImage" src="Pics/Background.png"/>
         </div>
         <div id="about">
                 <div id="aboutTitle" data-aos="fade-zoom-in"
@@ -103,12 +106,12 @@
                     data-aos-delay="1200"
                     data-aos-offset="0">
                         <div class="col-sm">
-                            <h2 style="display: inline">
+                            <h3 style="display: inline">
                                     I like technology and spend lots of time on the computer. 
                                     I am not a good writer but you can see my shorter thoughts on <a href="https://twitter.com/tsettle44">Twitter</a> and my longer 
                                     thoughts on <a href="https://medium.com/@tsettle44">Medium</a>. 
                                     Always looking to connect, join my <a href="https://discord.gg/jqq9PqG"> Discord</a>. Or <a href="#contact"> Email me.</a>
-                            </h2>
+                            </h3>
                         </div>
                     </div>
                     <div id="quote" class="row" data-aos="fade-zoom-in"
@@ -117,7 +120,7 @@
                     data-aos-offset="0">
                         <div class="col-sm">
                             <blockquote id="quoteTxt" class="blockquote">
-                                <h2 class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</h2>
+                                <h3 class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</h3>
                                 <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
                             </blockquote>
                         </div>
@@ -323,7 +326,9 @@
             .delete(5)
             .type('OM ')
             .pause(500)
-            .type('SETTLE.');
+            .type('SETTLE');
+        //rellax
+        var rellax = new Rellax('.rellax');
 
 </script>
 
