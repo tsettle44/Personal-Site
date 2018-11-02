@@ -64,6 +64,12 @@ body{
     color: #ffffff;
 }
 
+.show{
+    background-color: #FF5400;
+    margin-top: -10px;
+
+}
+
 #logo{
     height: 60px;
     width: 60px;
