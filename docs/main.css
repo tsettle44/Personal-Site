@@ -386,10 +386,35 @@ p{
 }
 
 #contact {
-    background-color: #FF5400;
-    height: 900px;
+    background-color: #39363D;
+    color: #ffffff;
+    margin-top: -3px;
+    height: 150px;;
 }
 
+.footer {
+    padding: 10px;
+}
+
+.center {
+    text-align: center
+}
+
+.icons{
+    list-style: none;
+    font-size: 120%;
+}
+
+.icons li{
+    display: inline;
+    float: right;
+    padding: 5px;
+}
+
+.icons a{
+    text-decoration: none;
+    color: #ffffff
+}
 
 
 
