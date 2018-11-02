@@ -39,16 +39,21 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div id="navbar">   
-            <a id="logoLink">
-                <a data-scroll  href="#navbar">
-                    <img id="logo" src="Pics/logoWhiteTrans.png"/>
-                </a>
-            </a> 
-            <a data-scroll id="contactLink" class="navLink" href="#contact">Contact</a>
-            <a data-scroll id="experienceLink" class="navLink" href="#experience">Experience</a>
-            <a data-scroll id="aboutLink" class="navLink" href="#about">About</a>
-        </div>
+        <nav class="navbar fixed-top navbar-dark navbar-expand-lg" id="navbar">   
+            <a class="navbar-brand" id="logoLink" data-scroll href="#navbar">
+                <img id="logo" src="Pics/logoWhiteTrans.png"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item"><a class="nav-link" data-scroll id="contactLink" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" data-scroll id="experienceLink" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" data-scroll id="aboutLink" href="#about">About</a></li>
+                </ul>  
+            </div>
+        </nav>
         <div id="backdrop">
             <div class="rellax" data-rellax-speed="2" id="desLogo">
                 <img src="Pics/diamondWhite.png"/>
@@ -306,31 +311,29 @@
 
         <div id="contact"></div>
     </div>
+    <script src="main.js"></script>
+    <script>
+            //AOS
+            AOS.init();
+            //Smooth-Scroll
+            var scroll = new SmoothScroll('a[href*="#"]',{
+                offset: 30
+            });
+            //typeit
+            var instance = new TypeIt('#name', {
+                    speed: 100,
+                    autoStart: false,
+                })
+                .type('THOMAS')
+                .pause(500)
+                .delete(5)
+                .type('OM ')
+                .pause(500)
+                .type('SETTLE');
+            //rellax
+            var rellax = new Rellax('.rellax');
+    </script>
 </body>
-
-<script src="main.js"></script>
-<script>
-        //AOS
-        AOS.init();
-        //Smooth-Scroll
-        var scroll = new SmoothScroll('a[href*="#"]',{
-            offset: 30
-        });
-        //typeit
-        var instance = new TypeIt('#name', {
-                speed: 100,
-                autoStart: false,
-            })
-            .type('THOMAS')
-            .pause(500)
-            .delete(5)
-            .type('OM ')
-            .pause(500)
-            .type('SETTLE');
-        //rellax
-        var rellax = new Rellax('.rellax');
-
-</script>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
