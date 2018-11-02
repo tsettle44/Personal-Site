@@ -9,7 +9,7 @@
     }
     #name{
         font-size: 350% !important;
-        top: -440px !important;
+        top: -440px !important; 
     }
     #aboutTitle{
         font-size: 300% !important;
@@ -27,13 +27,142 @@
     }
     #name{
         font-size: 150% !important;
-        top: -440px !important;
+        top: -30% !important;
+        text-align: center !important;
+        padding-left: 40px !important;
     }
     #aboutTitle{
-        font-size: 300% !important;
+        font-size: 200% !important;
     }
     #ExpTitle{
-        font-size: 300% !important;
+        font-size: 150% !important;
+    }
+    #desImage{
+        top: 500px;
+    }
+    .col-sm{
+        font-size: 120%;
+    }
+    .right{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 411px), (max-height: 823px) {
+    /* For mobile phones: */
+    #desLogo img{
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+    #name{
+        font-size: 150% !important;
+        top: -27% !important;
+        text-align: center !important;
+        padding-left: 40px !important;
+    }
+    #aboutTitle{
+        font-size: 200% !important;
+    }
+    #ExpTitle{
+        font-size: 150% !important;
+    }
+    #desImage{
+        top: 580px;
+    }
+    .col-sm{
+        font-size: 120%;
+    }
+    .right{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 375px), (max-height: 812px) {
+    /* For mobile phones: */
+    #desLogo img{
+        width: 100%;
+        height: auto;
+    }
+    #name{
+        font-size: 150% !important;
+        top: -26% !important;
+        text-align: center !important;
+        padding-left: 40px !important;
+    }
+    #aboutTitle{
+        font-size: 200% !important;
+    }
+    #ExpTitle{
+        font-size: 150% !important;
+    }
+    #desImage{
+        top: 580px;
+    }
+    .col-sm{
+        font-size: 120%;
+    }
+    .right{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 375px), (max-height: 667px) {
+    /* For mobile phones: */
+    #desLogo img{
+        width: 100%;
+        height: auto;
+    }
+    #name{
+        font-size: 150% !important;
+        top: -30% !important;
+        text-align: center !important;
+        padding-left: 40px !important;
+    }
+    #aboutTitle{
+        font-size: 200% !important;
+    }
+    #ExpTitle{
+        font-size: 150% !important;
+    }
+    #desImage{
+        top: 450px;
+    }
+    .col-sm{
+        font-size: 120%;
+    }
+    .right{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 320px), (max-height: 568px) {
+    /* For mobile phones: */
+    #desLogo img{
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+    #name{
+        font-size: 150% !important;
+        top: -30% !important;
+        text-align: center !important;
+        padding-left: 40px !important;
+    }
+    #aboutTitle{
+        font-size: 200% !important;
+    }
+    #ExpTitle{
+        font-size: 150% !important;
+    }
+    #desImage{
+        top: 390px;
+    }
+    .col-sm{
+        font-size: 120%;
+    }
+    .right{
+        display: none;
     }
 }
 
@@ -62,6 +191,10 @@ body{
 .nav-link{
     font-family: 'M PLUS Rounded 1c', sans-serif;
     color: #ffffff;
+}
+
+.nav-item{
+    padding-left: 10px;
 }
 
 .show{
@@ -209,7 +342,6 @@ body{
 
 .subInfo{
     font-size: 125%;
-    margin-top: -10px;
     display: inline;
 }
 
